@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Top navbar example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbar-static/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Curso: Periodismo de Datos II</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Portada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Actividad1.html">Actividad 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Actividad2.html">Actividad 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Actividad3.html">Actividad 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Actividad4.html">Actividad 4</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="bg-light p-5 rounded">
+            <html>
+
+            <body>
+                <h1 id="__actividad-dirigida-4-creaci-n-de-una-visualizaci-n-de-datos-desde-0__"><strong>Actividad Dirigida 4: Creación de una visualización de datos desde 0</strong></h1>
+                <p><em>Por Aina Errando</em></p>
+                <p align=center> <iframe title="Ratio de desempleo juvenil en la Unión Europea en 2020" aria-label="Gráfico de columnas" id="datawrapper-chart-A32Pb" src="https://datawrapper.dwcdn.net/A32Pb/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="600"></iframe> </p>
+                <script type="text/javascript">
+                    ! function() {
+                        "use strict";
+                        window.addEventListener("message", (function(e) {
+                            if (void 0 !== e.data["datawrapper-height"]) {
+                                var t = document.querySelectorAll("iframe");
+                                for (var a in e.data["datawrapper-height"])
+                                    for (var r = 0; r < t.length; r++) {
+                                        if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px"
+                                    }
+                            }
+                        }))
+                    }();
+                </script>
+                <p>La idea del esta visualización proviene de la posibilidad de realizar un reportaje sobre la <strong>situación de precariedad de los jóvenes españoles</strong> tras recoger unos testimonios para otra asignatura del máster. El reportaje busca aportar cifras e información de contexto a una problemática constante y acrecentada en los últimos años y, más recientemente, con la crisis sanitaria de la COVID-19, cuyas consecuencias reales aún están por analizar.</p>
+                <p>Teóricamente, el reportaje se podría publicar en cualquier medio digital nacional por la manera en que se dispone la información, incluyendo enlaces a otros documentos o fuentes y por la inclusión de gráficos interactivos.</p>
+                <p>En primer lugar, se ha buscado los datos de <a href="https://ec.europa.eu/eurostat/databrowser/view/YTH_EMPL_140$DEFAULTVIEW/default/table">Eurostat</a>, el portal estadístico a nivel europeo. He seleccionado los datos que eran de mi interés y las variables que quería tener en cuenta para proporcionar al lector una perspectiva clara. Una vez descargado el documento, se ha procedido a <strong>limpiar los datos</strong> para extraer los que se muestran en el reportaje con el software específico.</p>
+                <p>Se podrían haber escogido muchos datos interesantes para su <em>análisis en profundidad</em>, pero el objetivo de esta pieza es mostrar de manera muy visual los datos más relevantes, en comparación con el resto de países miembros de la UE.</p>
+                <p>Además de Eurostat, he visitado el portal estadístico del <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=4247">INE</a> y he buscado todos los datos disponibles a la <strong>evolución de la tasa de desempleo en jóvenes</strong>. Una vez conseguido el documento .xlsx, Después he procedido a limpiar el documento ya que buscaba seleccionar los datos con más valor informativo según mi juicio personal. Es decir, se descartan las cifras a nivel autonómico en este caso ya que el reportaje está pensado para poner cara a una <strong>problemática a nivel nacional realizando una comparativa europea</strong>.</p>
+                <p>El tratamiento de los datos será útil para realizar las visualizaciones posteriormente con Datawrapper: una sobre <a href="https://datawrapper.dwcdn.net/A32Pb/2/">el ratio de desempleo juvenil en la UE en 2020</a> y otra sobre <a href="https://datawrapper.dwcdn.net/qCsOx/1/">la evolución de la tasa de desempleo juvenil en España</a>. El uso de <strong>Datawrapper</strong> ha resultado bastante <strong>intuitivo</strong> después de un periodo de investigación sobre cómo introducir las cifras y las posibilidades de visualización que ofrece la herramienta. Una vez realizadas ambas visualizaciones, he procedido a insertarlas en <a href="https://preview.shorthand.com/4NWh3Eo9J2hzmbye">una pieza principal del reportaje</a>. Además, el reportaje cuenta con una <a href="https://preview.shorthand.com/v7PQU9rDoeb0PV3F">pieza complementaria</a> con testimonios e historias que ejemplifican lo explicado en el reportaje.</p>
+
+                <p align=center> <iframe title="Evolución de la tasa de desempleo juvenil en España" aria-label="Interactive line chart" id="datawrapper-chart-qCsOx" src="https://datawrapper.dwcdn.net/qCsOx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="400" align="center"></iframe> </p>
+                <script type="text/javascript">
+                    ! function() {
+                        "use strict";
+                        window.addEventListener("message", (function(e) {
+                            if (void 0 !== e.data["datawrapper-height"]) {
+                                var t = document.querySelectorAll("iframe");
+                                for (var a in e.data["datawrapper-height"])
+                                    for (var r = 0; r < t.length; r++) {
+                                        if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px"
+                                    }
+                            }
+                        }))
+                    }();
+                </script>
+
+    </main>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+
+</body></html>
